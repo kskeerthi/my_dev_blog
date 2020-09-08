@@ -1,2 +1,2 @@
 # my_dev_blog
-Personal website
+Personal website for portfolio
