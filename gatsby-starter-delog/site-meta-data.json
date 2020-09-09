@@ -1,9 +1,8 @@
 {
-  "title": "Delog",
+  "title": "Portfolio",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
-  "description": "Delog, a GatsbyJS and Netlify CMS starter for Designers and Developers",
+  "description": "Developer Portfolio to showcase the work",
   "home": {
-    "title": "Hi! I'm Delog",
-    "description": "I have been specifically designed to become a digital home for designers and developers, help them build amazing professional looking websites with ease. You don't have to worry about nitty gritty of web hosting services to run a blog and yet take full advantage of CMS to manage content :)"
-  }
+    "title": "Hi! I'm Keerthi",
+    "description": "Mobile Web Developer, experienced in HTML, CSS, Javascript, Angular, StencilJS, Flutter as the primary skills.Apart from that working on Python, Tensorflow, AI which can be called as my secondary set of skills "
 }
