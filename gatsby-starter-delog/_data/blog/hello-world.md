@@ -1,10 +1,11 @@
 ---
 template: BlogPost
-path: /hello-world
-date: 2020-02-20T07:08:53.137Z
-title: Hello World
-thumbnail: ''
+path: /projects-at-DBS
+date: 2018-05-29T07:08:53.137Z
+title: Customer service Portal at DBS
+thumbnail: '/assets/image-16.png'
 metaDescription: Meta description for Hello World
----
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugiat delectus pariatur blanditiis nulla soluta ratione nostrum, harum maiores adipisci a quod nobis cupiditate quae odit unde qui sit consequuntur.
+----
+
+Content to be added

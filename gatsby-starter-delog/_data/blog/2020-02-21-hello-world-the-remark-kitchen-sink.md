@@ -1,454 +1,55 @@
 ---
 template: BlogPost
-path: /remark-kitchen-sink
-date: 2020-02-21T12:12:25.364Z
-title: 'Hello World: The remark Kitchen Sink'
-thumbnail: /assets/image-6.jpg
+path: /component-library
+date: 2020-09-01T12:12:25.364Z
+title: 'Component library with StencilJS'
+thumbnail: /assets/image-9.png
 ---
-# h1 Heading 8-)
 
-## h2 Heading
+# Component Library Development
 
-### h3 Heading
+#### Will walk you through the below topics to explain my contribution to Component Library at NCR:
 
-#### h4 Heading
+1. Context
+2. Introduction
+3. My role
+4. Contribution
 
-##### h5 Heading
+### 1. Context 
+This is to give the high level idea of my role in contributing it to the component library as i am not supposed to use any git url's or code over here because of the confidentiality, i have documented my work in detail.Will be adding Live application open source screens if i can find any to the blog thoroughly.
 
-###### h6 Heading
+#### 2. Introduction
+As any Enterprise, NCR had their own Design system to maintain consistency and Branding across hundreds of products acrossges.A component library helps designers to stick to the guidelines of your product and it has less impact on development. Instead of recreating components you are reusing components.It also helps application level developers to work on same components/widgets all the time. It will create certain standard/guidelines to be followed when you develop a product for designers and Developers. Because it takes immense amount of research,time,Audit,understanding products and understanding your customers.
+Component library will help in all the ways in scaling the effeciency and decreasing the developers cost
 
-## Horizontal Rules
 
-- - -
+#### 3. My Role
+* When i was hired at NCR, i was Hired as UI Engineer-1 role for Developing component library
+* Got an opportunity to understand the products, UI and Existing Design System
+* Before it was on Angular and React as different Repo for Component library(*Which i would be explainingall those details in 2019 Experience card*)
+* I am currently working with the Team size of 15 members including designers,branding and development team.
+* Part of 4 people team with the development and all tech stack,Architecture and development decisions will be taken by our R & D Team after gettin input from Marketing Teams, Branding Teams and Design Team.
+* Its a constant collaboration between the teams to build solid Component library
 
-- - -
+#### 4. Contribution
+* Working on **Monorepo**, as this is the era of sharing single source of truth.To maintain monorepo we took care of pre-requisites such as :
+  * Package Management
+  * Cross Package Orchestrators
+  * Linters
+  * Testing tools
+  * Build System/Infrastructure
+* Have initially used rush for package manager but moving towards yarn lately
+* Using **StencilJS**, to create web-components,As many applications have different kind of libraries/frameworks used across the company, from my previous experience when we started building component library we had challenges that had to be handled, such as:
+  * How can we build dependent free component library for all the applications?
+  * How can we not increase dependency on component library end so that application developers need not use many wrappers around the each component that they will be utilizing?
+* until then, every framework/library has to have different Repo to support that particular application framework or library, Like Angular Applications i have maintained Web-components for Angular Repo, React Repo for React components etc., These have been handled by introducing stenciljs into the system
+* StencilJS is the actual synonym of write once and use everywhere, which i could successfully  push towards our application level developers to leverage their development experience
+* Apart from that i also worked on creating CSS Framework to stick to the themes,colors, fonts, typography by our Branding and Design team.To make it more Compatabile for us developers to develop and maintain the code
+* Component library need not be used only as white label products across NCR, It has other set of services such as maintaining and developing clients application, so for that maintaining structured CSS with proper Conventions was the priority
+* Component library is used across NCR in many products some of them to name ATM, ALOHA, Silver, Emerald etc., are the prime proucts which rigourously use component library to enhance and increase the Front end development Experience
+* Currently new version has been released which is in beta-mode and it is called NCR Design System as of now.
+* Working on series of components to make it as official release
 
-- - -
 
-## Typographic replacements
 
-Enable typographer option to see result.
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-*This is italic text*
-
-*This is italic text*
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-* Create a list by starting a line with `+`, `-`, or `*`
-* Sub-lists are made by indenting 2 spaces:
-
-  * Marker character change forces new list start:
-
-    * Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    * Nulla volutpat aliquam velit
-* Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-58. bar
-
-## Code
-
-Inline `code`
-
-Indented code
-
-```
-// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-```
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-```js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png) ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text](https://octodex.github.com/images/dojocat.jpg "The Dojocat")
-
-With a reference later in the document defining the URL location:
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-* 19^th^
-* H\~2\~O
-
-### [<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-### [<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-\==Marked text==
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link\[^first].
-
-Footnote 2 link\[^second].
-
-Inline footnote^\[Text of inline footnote] definition.
-
-Duplicated footnote reference\[^second].
-
-\[^first]: Footnote **can have markup**
-
-```
-and multiple paragraphs.
-```
-
-\[^second]: Footnote text.
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1 with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-```
-    { some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-```
-
-*Compact style:*
-
-Term 1   ~ Definition 1
-
-Term 2   \~ Definition 2a
-  \~ Definition 2b
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-\*\[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning *here be dragons* :::---
-**Advertisement :)**
-
-* **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image resize in browser.
-* **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly i18n with plurals support and easy syntax.
-
-You will like those projects!
-
-- - -
-
-# h1 Heading 8-)
-
-## h2 Heading
-
-### h3 Heading
-
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
-- - -
-
-- - -
-
-- - -
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-*This is italic text*
-
-*This is italic text*
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-* Create a list by starting a line with `+`, `-`, or `*`
-* Sub-lists are made by indenting 2 spaces:
-
-  * Marker character change forces new list start:
-
-    * Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    * Nulla volutpat aliquam velit
-* Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-58. bar
-
-## Code
-
-Inline `code`
-
-Indented code
-
-```
-// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-```
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-```js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png) ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text](https://octodex.github.com/images/dojocat.jpg "The Dojocat")
-
-With a reference later in the document defining the URL location:
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-* 19^th^
-* H\~2\~O
-
-### [<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-### [<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-\==Marked text==
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link\[^first].
-
-Footnote 2 link\[^second].
-
-Inline footnote^\[Text of inline footnote] definition.
-
-Duplicated footnote reference\[^second].
-
-\[^first]: Footnote **can have markup**
-
-```
-and multiple paragraphs.
-```
-
-\[^second]: Footnote text.
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1 with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-```
-    { some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-```
-
-*Compact style:*
-
-Term 1   ~ Definition 1
-
-Term 2   \~ Definition 2a
-  \~ Definition 2b
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-\*\[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning *here be dragons* :::

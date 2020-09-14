@@ -20,6 +20,7 @@ const AboutPage = ({
         </div>
         <div>
           <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+          <p>Content will be here soon</p>
                       </form>
         </div>
       </div>
